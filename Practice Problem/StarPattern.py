@@ -39,7 +39,7 @@ second_or(5)
 def equi_tria(n):
     #print("\nEquilateral Triangle")
     for i in range(n):
-        for j in range(n-i):
+        for j in range(n-i-1):
             print(' ',end=' ')
         for j in range(i+1):
             print(' * ',end=' ')
@@ -66,3 +66,11 @@ def fourth_star(n):
         for j in range(k):
             print("*"*(i-j),end=' ')
         print()
+
+def diamond(n):
+    for i in range(n):
+        print(' '*(n-i-1)+'* '*(i+1))
+    for j in range(n,0,-1):
+        print(' '*(n-j)+'* '*j)
+#def neat_diamond
+diamond(5)
